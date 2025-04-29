@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 // Menghubungkan endpoint ke Routes
 app.use("/api/users", require("./routes/user"));
 app.use("/api/jurusan", require("./routes/jurusan"));
-// app.use("/api/prodi", require("./routes/prodi"));
+app.use("/api/prodi", require("./routes/prodi"));
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
